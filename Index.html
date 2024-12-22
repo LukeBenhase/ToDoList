@@ -7,8 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div></div>
-
-    <script src="script.js"></script>
+    <div class="popup">
+        <form class="add-card-form">
+            <input type="text" id="card-title" placeholder="Card Title" required>
+            <textarea id="card-description" placeholder="Card Description"></textarea>
+            <input type="date" id="card-date" required>
+            <select id="card-priority">
+                <option value="none">None</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="submit-card" type="submit">Add Card</button>
+        </form>
+    </div>
+    <div class="container">
+        <div class="projects">
+        </div>
+        <div class="tasks">
+            <h2 class="title">Projects</h2>
+        </div>
+    </div>
+    <button id="add">Add</button>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
